@@ -1,0 +1,211 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 60px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'DM Serif Display', serif;
+            color: #9C89B8;
+            padding: 30px;
+        }
+
+        h2 .first {
+            margin-right: 300px;
+        }
+
+        h2 .second {
+            margin-left: 300px;
+        }
+
+        .header-btn {
+            margin-top: 50px;
+        }
+
+        .header-btn a {
+            text-decoration: none;
+            color: #9C89B8;
+            padding: 20px;
+            border: 3px solid #9C89B8;
+            font-size: 30px;
+            margin: 20px;
+            font-family: 'DM Serif Display', serif;
+        }
+    }
+
+    .header-img .img {
+        width: 740px;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        margin: 50px;
+        box-shadow: -1px 0px 29px -7px rgba(0,0,0,0.75);
+    }
+}
+
+@media (max-width: 1800px) {
+    .header {
+        padding: 30px;
+
+        .header-content h2 {
+            font-size: 50px;
+        }
+
+        .header-content h2 .first {
+            margin-right: 200px;
+        }
+
+        .header-content h2 .second {
+            margin-left: 200px;
+        }
+
+        .header-img .img {
+            width: 600px;
+            height: 300px;
+            margin: 50px 30px;
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .header .header-content {
+        h2 {
+            font-size: 40px;
+        }
+
+        h2 .first {
+            margin-right: 150px;
+        }
+
+        h2 .second {
+            margin-left: 150px;
+        }
+
+        .header-btn a {
+            font-size: 30px;
+            padding: 10px;
+        }
+    }
+    .header .header-img .img {
+        width: 500px;
+        height: 300px;
+        margin: 40px 20px;
+    }
+}
+@media (max-width: 1150px) {
+    .header {
+        flex-direction: column;
+
+        .header-img {
+            display: flex;
+            justify-content: center;
+
+            .img {
+                width: 600px;
+                height: 300px;
+                margin: 40px 20px;
+                position: absolute;
+                top: 300px;
+            }
+        }
+
+        .header-content {
+            
+            h2 {
+                margin: 0;
+                font-size: 45px;
+            }
+            
+            h2 .first {
+                margin-right: 200px;
+            }
+
+            h2 .second {
+                margin-left: 200px;
+            }
+
+            .header-btn {
+                margin: 400px auto 0px auto;
+            }
+        }
+
+    }
+}
+@media (max-width: 700px) {
+    .header {
+        padding: 25px 10px 10px 10px;
+
+        .header-content h2 {
+            font-size: 40px;
+            padding: 30px 0;
+        }
+
+        .header-content h2 .first {
+            margin-right: 150px;
+        }
+
+        .header-content h2 .second {
+            margin-left: 150px;
+        }
+
+        .header-content .header-btn {
+            margin: 300px auto 0 auto;
+        }
+
+        .header-content .header-btn a {
+            padding: 20px;
+            font-size: 25px;
+        }
+
+        .header-img .img {
+            width: 450px;
+            height: 225px;
+            top: 250px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .header {
+        padding: 25px 10px 10px 10px;
+
+        .header-content {
+            max-height: 400px;
+
+            h2 {
+                font-size: 30px;
+                padding: 30px 0;
+            }
+
+            h2 .first {
+                margin-right: 75px;
+            }
+
+            h2 .second {
+                margin-left: 75px;
+            }
+
+            .header-btn {
+                margin: 240px auto;
+            }
+
+            .header-btn a {
+                padding: 10px;
+                font-size: 20px;
+                margin: 10px;
+            }
+        }
+
+        .header-img .img {
+            width: 310px;
+            height: 180px;
+            top: 200px;
+        }
+    }
+}

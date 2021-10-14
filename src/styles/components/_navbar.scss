@@ -1,0 +1,188 @@
+nav {
+    width: 100%;
+    background: #F0E6EF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+        color: #9C89B8;
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px;
+        font-weight: 300;
+        margin: 10px;
+    }
+
+    h2 {
+        color: #9C89B8;
+        font-family: 'DM Serif Display', serif;
+        text-align: center;
+        margin: 10px;
+    }
+    .menu-btn {
+        position: absolute;
+        display: flex;
+        background: #fff;
+        border: 1px solid #9C89B8;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        z-index: 11;
+        /* border: 3px solid #fff; */
+      }
+    .menu-btn__burger {
+        width: 40px;
+        height: 5px;
+        background: #9C89B8;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 6px;
+        background: #9C89B8;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+    }
+    .menu-btn__burger::before {
+        transform: translateY(-16px);
+    }
+    .menu-btn__burger::after {
+        transform: translateY(16px);
+    }
+    /* ANIMATION */
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+    .menu-open {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 10;
+        background: #9C89B8;
+        top: -100vh
+    }
+    .menu-open .entreprise-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-open h1 {
+        color: #F0E6EF;
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px;
+        font-weight: 300;
+        margin: 10px;
+    }
+    .menu-open h2 {
+        color: #F0E6EF;
+        font-family: 'DM Serif Display', serif;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    nav {
+        justify-content: start;
+
+        h1 {
+            margin-left: 20px;
+        }
+
+        h2 {
+            margin-left: 20px;
+        }
+    }
+}
+@media (max-width: 700px) {
+    nav {
+        justify-content: start;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0 0 0 20px;
+        }
+
+        .menu-btn {
+            width: 60px;
+            height: 60px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        .menu-btn__burger {
+            width: 30px;
+        }
+        .menu-btn__burger::before,
+        .menu-btn__burger::after {
+            width: 30px;
+            height: 5px;
+        }
+        .menu-btn__burger::before {
+            transform: translateY(-12px);
+        }
+        .menu-btn__burger::after {
+            transform: translateY(12px);
+        }
+    }
+}
+@media (max-width: 500px) {
+    nav {
+
+        h1 {
+            font-size: 40px;
+        }
+        
+        h2 {
+            margin-top: -10px;
+        }
+        .menu-btn {
+            width: 40px;
+            height: 40px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        .menu-btn__burger {
+            width: 20px;
+            height: 2px;
+        }
+        .menu-btn__burger::before,
+        .menu-btn__burger::after {
+            width: 20px;
+            height: 2px;
+        }
+        .menu-btn__burger::before {
+            transform: translateY(-6px);
+        }
+        .menu-btn__burger::after {
+            transform: translateY(6px);
+        }
+    }
+}
