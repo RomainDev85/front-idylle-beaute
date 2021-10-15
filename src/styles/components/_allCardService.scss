@@ -1,0 +1,28 @@
+.services {
+    margin: 100px 50px;
+    display: flex;
+    justify-content: center;
+
+    .first {
+        flex-direction: column;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+    }
+}
+@media  (max-width: 1250px){
+    .services {
+       flex-direction: column;
+       margin-top: 50px;
+       align-items: center;
+
+       .first {
+            flex-direction: row;
+        }
+
+        .second {
+            flex-direction: row-reverse;
+        }
+    }   
+}
