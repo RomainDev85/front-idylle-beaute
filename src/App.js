@@ -10,11 +10,12 @@ export default function App() {
     <BrowserRouter>
       <Navbar/>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/:category" exact component={Categories} />
-        <Route path="/menu" exact component={Menu} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/menu" component={Menu} />
+        <Route exact path="/:category" component={Categories} />
         <Redirect to="/"/>
       </Switch>
     </BrowserRouter>
   )
 }
+

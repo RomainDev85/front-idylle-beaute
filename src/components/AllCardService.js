@@ -35,7 +35,7 @@ export default function AllCardService() {
                     <CardService
                         title={category.nom}
                         image={category.image}
-                        link={category.url_categorie}
+                        urlCategory={category.url_categorie}
                         placeImage={check(category.id) ? "first" : "second"}
                         key={category.id}
                     />
