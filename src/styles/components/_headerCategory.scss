@@ -66,11 +66,110 @@
 
 
 }
+@keyframes fadeimage1 {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeimage2 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeimage3 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeimage4 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeimage5 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 @media (max-width: 1750px) {
     .header-categorie .image {
         width: 1400px;
         height: 700px;
-        background: blue;
 
         img {
             width: 525px;
@@ -91,7 +190,6 @@
     .header-categorie .image {
         width: 1200px;
         height: 600px;
-        background: blue;
 
         img {
             width: 450px;
@@ -118,7 +216,6 @@
     .header-categorie .image {
         width: 1000px;
         height: 500px;
-        background: blue;
 
         img {
             width: 390px;
@@ -145,7 +242,6 @@
     .header-categorie .image {
         width: 800px;
         height: 400px;
-        background: blue;
 
         img {
             width: 330px;
@@ -172,7 +268,6 @@
     .header-categorie .image {
         width: 700px;
         height: 350px;
-        background: blue;
 
         img {
             width: 270px;
@@ -192,6 +287,57 @@
         }
         #img5 {
             top:170px;
+        }
+    }
+}
+@media (max-width: 750px) {
+    .header-categorie .image {
+        width: 510px;
+        height: 340px;
+
+        img {
+            width: 510px;
+            height: 340px;
+        }
+        #img1 {
+            position: absolute;
+            transform: rotate(0deg);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeimage1 15s infinite;
+        }
+        #img2 {
+            position: absolute;
+            transform: rotate(0deg);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeimage2 15s infinite;
+        }
+        #img3 {
+            position: absolute;
+            transform: rotate(0deg);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeimage3 15s infinite;
+        }
+        #img4 {
+            position: absolute;
+            transform: rotate(0deg);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeimage4 15s infinite;
+        }
+        #img5 {
+            position: absolute;
+            transform: rotate(0deg);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeimage5 15s infinite;
         }
     }
 }
