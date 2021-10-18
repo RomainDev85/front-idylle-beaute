@@ -1,9 +1,9 @@
 nav {
     width: 100%;
-    background: #F0E6EF;
     display: flex;
     justify-content: center;
     position: relative;
+    background-color: #F0E6EF;
 
     h1 {
         color: #9C89B8;
@@ -101,7 +101,17 @@ nav {
         margin: 10px;
     }
 }
+.navigation-open {
+    background: #9C89B8;
+    position: fixed;
 
+    h1 {
+        color: #F0E6EF;
+    }
+    h2 {
+        color: #F0E6EF;
+    }
+}
 
 @media (max-width: 1150px) {
     nav {

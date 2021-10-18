@@ -29,7 +29,7 @@ export default function AllCardService() {
    }
 
     return (
-        <section className="services" id="service">
+        <section className="services" id="services">
             {!isEmpty(categories) &&
                 categories.map((category) => (
                     <CardService

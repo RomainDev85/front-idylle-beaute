@@ -16,7 +16,7 @@ export default function Presentation() {
                 </div>
                 <p>Pauline vous acceuille dans son institut Idylle Beauté, situé à l’Aiguillon sur vie en Vendée. Voyagez au pays de la relaxation et du bien-être, dans une ambiance chaleureuse. Grâce à ses soins du visage, corps, onglerie, épilations etc.<br/>Venez tenter l’experience !</p>
             </div>
-            <div className="produit">
+            <div className="produit" id="produit">
                 <div className="baija-img">
                     <img src="./img/carousel-baija/baija1.jpg" alt="produit baija" className="slide1"/>
                     <img src="./img/carousel-baija/baija2.jpg" alt="produit baija" className="slide2"/>

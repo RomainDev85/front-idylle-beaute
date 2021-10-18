@@ -1,0 +1,94 @@
+.list-prestations {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.list-prestations ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.list-prestations li {
+    display: flex;
+    width: 1400px;
+    justify-content: space-between;
+}
+.list-prestations li h3 {
+    display: flex;
+    align-self: center;
+    font-size: 30px;
+    color: #9C89B8;
+    font-family: 'DM Serif Display', serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.list-prestations li p {
+    display: inline-block;
+    white-space:nowrap;
+    font-size: 30px;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    color: #F0E6EF;
+    background: #9C89B8;
+    font-family: 'DM Serif Display', serif;
+}
+/* spinner */
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+} 
+.list-prestations .spinner{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: .25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite;
+    margin: 50px auto;
+    color: #9C89B8
+}
+
+/* media queries */
+@media (max-width: 1500px){
+    .list-prestations li {
+        width: 1150px;
+    }
+}
+@media (max-width: 1200px){
+    .list-prestations li {
+        width: 900px;
+    }
+}
+@media (max-width: 1000px){
+    .list-prestations li {
+        width: 750px;
+    }
+}
+@media (max-width: 800px){
+    .list-prestations li {
+        width: 500px;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .list-prestations li h3 {
+        text-align: center;
+    }
+    .list-prestations li p {
+        width: max-content;
+        margin: 15px auto;
+    }
+}
+@media (max-width: 550px){
+    .list-prestations li {
+        width: 350px;
+    }
+}
+@media (max-width: 400px){
+    .list-prestations li {
+        width: 300px;
+    }
+}

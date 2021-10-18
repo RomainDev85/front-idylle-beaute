@@ -18,7 +18,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav>
+            <nav className={menuOpen ? 'navigation-open' : ''}>
                 <div className="navbar">
                     <div className="entreprise">
                         <h1>Idylle Beauté</h1>

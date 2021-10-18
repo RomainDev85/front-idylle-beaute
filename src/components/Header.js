@@ -10,7 +10,7 @@ export default function Header() {
                     <span className="second"> à portée de main.</span>
                 </h2>
                 <div className="header-btn">
-                    <a href="/#service">Prestations</a>
+                    <a href="/#services">Prestations</a>
                     <a href="/#contact">Contactez moi</a>
                 </div>
             </div>

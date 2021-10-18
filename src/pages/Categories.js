@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
 import  { Redirect } from 'react-router-dom'
 import HeaderCategory from '../components/HeaderCategory';
+import ListServices from '../components/ListServices';
 
 export default function Categories() {
 
@@ -26,6 +27,9 @@ export default function Categories() {
         return <Redirect to='/'  />
     }
     return (
-        < HeaderCategory />
+        <>
+            < HeaderCategory />
+            < ListServices />
+        </>
     )
 }

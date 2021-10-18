@@ -1,8 +1,10 @@
 .menu-navigation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9C89B8;
 
     ul {
         display: flex;
@@ -17,7 +19,7 @@
     a {
         font-family: 'DM Serif Display', serif;
         font-size: 30px;
-        color: #9C89B8;
+        color: #F0E6EF;
     }
 
     i {
