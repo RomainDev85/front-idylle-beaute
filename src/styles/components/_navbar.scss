@@ -4,6 +4,8 @@ nav {
     justify-content: center;
     position: relative;
     background-color: #F0E6EF;
+    z-index: 5;
+    transition: 0.8s;
 
     h1 {
         color: #9C89B8;
