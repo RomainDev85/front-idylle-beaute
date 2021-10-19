@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FirstLoadingContext } from '../context/FirstLoading';
 
@@ -18,9 +18,9 @@ export default function Header() {
                     <a href="/#contact">Contactez moi</a>
                 </motion.div>
             </div>
-            <div className="header-img">
+            <motion.div className="header-img">
                 <motion.img src="./img/header-img.jpg" alt="" style={firstLoading ? {opacity: 0} : {}} inital={firstLoading ? {opacity:0} : {}} animate={{opacity:1, zIndex: 1, transition: {delay:1.1}}}/>
-            </div>
+            </motion.div>
         </section>
     )
 }
