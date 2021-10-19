@@ -18,13 +18,11 @@ export default function AllCardService() {
         }
     }, [loadCategories])
 
-    console.log(categories);
-
-    // Check si l'id categorie est pair ou impaire
+    // check if category can be equal split or not
     function check(nbr){
-        // chiffre pair
+        // can be split
         if(nbr%2 === 0) return true; 
-        //  chiffre impair
+        //  cant be split
         else return false;
    }
 

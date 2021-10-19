@@ -5,22 +5,26 @@ import Categories from './pages/Categories'
 import Home from './pages/Home'
 import Menu from './pages/Menu'
 import { NavigationContext } from './context/NavigationContext'
+import { FirstLoadingContext } from './context/FirstLoading'
 
 export default function App() {
 
-  const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(false);
+  const [firstLoading, setFirstLoading] = useState(true);
 
   return (
     <BrowserRouter>
-      <NavigationContext.Provider value={{ menu, setMenu }}>
-        <Navbar/>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/menu" component={Menu} />
-          <Route exact path="/:category" component={Categories} />
-          <Redirect to="/"/>
-        </Switch>
-      </NavigationContext.Provider>
+      <FirstLoadingContext.Provider value={{ firstLoading, setFirstLoading }}>
+        <NavigationContext.Provider value={{ menu, setMenu }}>
+          <Navbar/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/menu" component={Menu} />
+            <Route exact path="/:category" component={Categories} />
+            <Redirect to="/"/>
+          </Switch>
+        </NavigationContext.Provider>
+      </FirstLoadingContext.Provider>
     </BrowserRouter>
   )
 }

@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect, useContext } from 'react'
 import AllCardService from '../components/AllCardService'
 import Contact from '../components/Contact'
 import Header from '../components/Header'
 import Presentation from '../components/Presentation'
+import { FirstLoadingContext } from '../context/FirstLoading'
 
 export default function Home() {
+    const { setFirstLoading } = useContext(FirstLoadingContext)
+
+    useEffect(() => {
+        setFirstLoading(false)
+    }, [setFirstLoading])
+
     return (
         <>
             < Header />

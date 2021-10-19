@@ -17,8 +17,6 @@ export default function ListServices() {
         })
     }, [loadInfo, category])
 
-    console.log(services);
-
     return (
         <div className="list-prestations">
             <ul>

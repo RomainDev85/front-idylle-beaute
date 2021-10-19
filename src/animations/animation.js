@@ -1,14 +1,14 @@
-export const animationOne = {
+// Menu
+export const animationMenu = {
     in: {
         opacity: 1,
-        scale: 1
+        y: 0
     },
     out: {
         opacity: 0,
-        scale: 0.1
+        y: -800
     }
 };
-
-export const transition = {
-    duration: 0.8
+export const transitionMenu = {
+    duration: 0.4
 }
