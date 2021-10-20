@@ -271,12 +271,12 @@
     }
     .description .produit p {
         width: 800px;
-        padding: 30px;
+        padding: 40px 30px 30px 30px;
         line-height: 35px;
     }
     .description .institut p {
         width: 800px;
-        padding: 30px;
+        padding: 40px 30px 30px 30px;
         line-height: 35px;
     }
     .description .produit .baija-img {
@@ -290,7 +290,7 @@
 }
 @media (max-width: 900px) {
     .description {
-        margin-top: 40px;
+        margin-top: 0px;
     }
     .description h2 .first {
         margin-left: 20px; 
@@ -305,11 +305,11 @@
     }
     .description .institut p {
         width: 600px;
-        padding: 20px;
+        padding: 30px 20px 20px 20px;
     }
     .description .produit p {
         width: 600px;
-        padding: 20px;
+        padding: 30px 20px 20px 20px;
     }
 }
 @media (max-width: 700px){

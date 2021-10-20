@@ -194,6 +194,36 @@
             }
 
             .header-btn {
+                margin: 240px auto 0px auto;
+            }
+
+            .header-btn a {
+                padding: 10px;
+                font-size: 20px;
+                margin: 10px;
+            }
+        }
+
+        .header-img img {
+            width: 310px;
+            height: 180px;
+            top: 200px;
+            left: 44%
+        }
+    }
+}
+@media (max-width: 400px) {
+    .header {
+        .header-content {
+            h2 .first {
+                margin-right: 50px;
+            }
+
+            h2 .second {
+                margin-left: 65px;
+            }
+
+            .header-btn {
                 margin: 240px auto;
             }
 

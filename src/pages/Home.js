@@ -6,10 +6,13 @@ import Presentation from '../components/Presentation'
 import { FirstLoadingContext } from '../context/FirstLoading'
 
 export default function Home() {
+    
     const { setFirstLoading } = useContext(FirstLoadingContext)
 
     useEffect(() => {
-        setFirstLoading(false)
+        setTimeout(() => {
+            setFirstLoading(false)
+        }, 2000)
     }, [setFirstLoading])
 
     return (

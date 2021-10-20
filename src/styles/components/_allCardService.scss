@@ -14,7 +14,7 @@
 @media  (max-width: 1250px){
     .services {
        flex-direction: column;
-       margin-top: 50px;
+       margin: 60px 50px;
        align-items: center;
 
        .first {
@@ -24,5 +24,15 @@
         .second {
             flex-direction: row-reverse;
         }
+    }   
+}
+@media  (max-width: 800px){
+    .services {
+       margin: 45px;
+    }   
+}
+@media  (max-width: 500px){
+    .services {
+       margin: 30px;
     }   
 }

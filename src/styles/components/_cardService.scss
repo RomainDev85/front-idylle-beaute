@@ -41,7 +41,7 @@
             height: 5px;
             background: #9C89B8;
             position: absolute;
-            top: 52%;
+            top: 48%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -51,6 +51,10 @@
     .carte-service .content {
         height: 250px;
         width: 250px;
+
+        span {
+            top: 46%
+        }
     }
     .carte-service img {
         height: 250px;
@@ -80,6 +84,10 @@
         height: 300px;
         width: 300px;
         margin: 10px;
+
+        span {
+            top: 47%;
+        }
     }
     .carte-service img {
         height: 300px;
@@ -101,7 +109,7 @@
     .carte-service .content span {
         width: 30px; 
         height: 4px;
-        top: 50%;
+        top: 45%;
     }
 }
 @media  (max-width: 500px){
@@ -109,6 +117,8 @@
         height: 150px;
         width: 150px;
         margin: 5px;
+        padding: 8px 5px;
+        justify-content: space-between;
     }
     .carte-service img {
         height: 150px;
@@ -116,11 +126,12 @@
         margin: 5px;
     }
     .carte-service .content h3 {
-        margin-top: 15px;
-        font-size: 25px;
+        margin-top: 5px;
+        font-size: 22px;
+        text-align: center;
     }
     .carte-service .content a {
-        font-size: 25px;
+        font-size: 22px;
         padding: 6px 10px;
     }
     .carte-service .content span {

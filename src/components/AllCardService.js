@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CardService from './CardService';
-import { isEmpty } from '../Utils';
 
 export default function AllCardService() {
 
@@ -13,32 +12,41 @@ export default function AllCardService() {
             axios.get(`${process.env.REACT_APP_BASE_URL}/api/categories`)
             .then(res => {
                 setCategories(res.data)
+                setloadCategories(false)
             })
-            .then(setloadCategories(false))
         }
-    }, [loadCategories])
+    }, [categories, loadCategories])
 
-    // check if category can be equal split or not
+    // Check if id category can be equal split
     function check(nbr){
-        // can be split
+        // can be
         if(nbr%2 === 0) return true; 
-        //  cant be split
+        //  cant be
         else return false;
    }
 
-    return (
-        <section className="services" id="services">
-            {!isEmpty(categories) &&
-                categories.map((category) => (
-                    <CardService
-                        title={category.nom}
-                        image={category.image}
-                        urlCategory={category.url_categorie}
-                        placeImage={check(category.id) ? "first" : "second"}
-                        key={category.id}
-                    />
-                ))
-            }
-        </section>
-    )
+   if(loadCategories === false){
+       return (
+           <section className="services" id="services">
+               {categories.map((category) => (
+                       <CardService
+                           title={category.nom}
+                           image={category.image}
+                           urlCategory={category.url_categorie}
+                           placeImage={check(category.id) ? "first" : "second"}
+                           key={category.id}
+                       />
+                   ))
+               }
+           </section>
+       )
+   }
+   else {
+       return (
+           <section className="services" id="services">
+               <h1>Chargement</h1>
+           </section>
+       )
+
+   }
 }
