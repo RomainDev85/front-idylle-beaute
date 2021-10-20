@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
-import { animationMenu, transitionMenu } from '../animations/animation';
 import { NavigationContext } from '../context/NavigationContext';
 
 export default function Menu() {
@@ -16,6 +15,22 @@ export default function Menu() {
             setMenu(true)
         }
     }
+
+    // Menu animation
+    const animationMenu = {
+    in: {
+            opacity: 1,
+            y: 0
+        },
+    out: {
+            opacity: 0,
+            y: -800
+        }
+    };
+    const transitionMenu = {
+        duration: 0.4
+    }
+    
 
     return (  
         <motion.section className="menu-navigation" initial='out' animate='in' exit='out' variants={animationMenu} transition={transitionMenu}>
