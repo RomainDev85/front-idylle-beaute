@@ -4,10 +4,13 @@ import Contact from '../components/Contact'
 import Header from '../components/Header'
 import Presentation from '../components/Presentation'
 import { FirstLoadingContext } from '../context/FirstLoading'
+import { NavigationContext } from '../context/NavigationContext'
+import Menu from '../components/Menu'
 
 export default function Home() {
     
     const { setFirstLoading } = useContext(FirstLoadingContext)
+    const { menu } = useContext(NavigationContext)
 
     useEffect(() => {
         setTimeout(() => {
@@ -17,10 +20,16 @@ export default function Home() {
 
     return (
         <>
-            < Header />
-            < Presentation />
-            < AllCardService />
-            < Contact />
+        {menu ? 
+            <Menu/>
+            : 
+            <>
+                < Header />
+                < Presentation />
+                < AllCardService />
+                < Contact />
+            </>
+        }
         </>
     )
 }

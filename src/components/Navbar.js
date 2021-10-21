@@ -1,5 +1,4 @@
-import React, { useContext, useEffect } from 'react';
-import { useHistory } from "react-router-dom";
+import React, { useContext } from 'react';
 import { NavigationContext } from '../context/NavigationContext';
 import { motion } from 'framer-motion';
 
@@ -7,27 +6,15 @@ import { motion } from 'framer-motion';
 export default function Navbar() {
 
     const { setMenu, menu } = useContext(NavigationContext)
-    let history = useHistory();
 
     function handleClick(){
         if(menu){
             setMenu(false)
-            history.goBack()
         }
         else {
             setMenu(true)
-            history.push("/menu")
         }
     }
-
-    useEffect(() => {
-        if(window.location.pathname !== "/menu"){
-            setMenu(false)
-        }
-        else {
-            setMenu(true)
-        }
-    }, [setMenu])
 
     return (
         <nav className={menu ? 'navigation-open' : ''}>
