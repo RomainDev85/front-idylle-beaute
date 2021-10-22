@@ -1,0 +1,33 @@
+.action-page-category {
+    display: flex;
+    justify-content: center;
+
+    a {
+        margin-top: 17px;
+        font-size: 30px;
+        padding: 14px 21px;
+        margin: 20px;
+        border: 3px solid #9C89B8;
+        color: #9C89B8;
+    }
+
+    .btn-other-service {
+        align-items: center;
+        // background: #9C89B8;
+        border: 3px solid #9C89B8;       
+        margin: 20px;
+
+        h4 {
+            padding: 14px 21px;
+            color: #9C89B8;
+            font-size: 30px;
+            font-weight: normal;
+        }
+        
+    }
+    
+    ul {
+        align-items: center;
+    }
+    margin-bottom: 70px;
+}

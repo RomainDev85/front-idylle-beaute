@@ -7,6 +7,7 @@ import ListServices from '../components/ListServices';
 import { NavigationContext } from '../context/NavigationContext'
 import Menu from '../components/Menu';
 import { FirstLoadingContext } from '../context/FirstLoading';
+import ActionCategoryPage from '../components/ActionCategoryPage';
 
 export default function Categories() {
 
@@ -41,6 +42,7 @@ export default function Categories() {
             <>
                 < HeaderCategory />
                 < ListServices />
+                < ActionCategoryPage/>
             </>
         }
         </>
