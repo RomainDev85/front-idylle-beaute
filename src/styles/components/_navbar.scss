@@ -5,7 +5,8 @@ nav {
     position: relative;
     background-color: #F0E6EF;
     z-index: 5;
-    transition: 0.4s;
+    // transition: 0.4s;
+    transition-duration: 0.3s;
 
     h1 {
         color: #9C89B8;
@@ -104,8 +105,8 @@ nav {
     }
 }
 .navigation-open {
-    background: #9C89B8;
     position: fixed;
+    background-color: #9C89B8;
 
     h1 {
         color: #F0E6EF;

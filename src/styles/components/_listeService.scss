@@ -27,17 +27,13 @@
 .list-prestations li p {
     display: inline-block;
     white-space:nowrap;
-    font-size: 30px;
+    font-size: 40px;
     margin: 20px 10px;
     padding: 10px 20px;
     color: #F0E6EF;
     background: #9C89B8;
     font-family: 'DM Serif Display', serif;
 }
-/* spinner */
-@keyframes spinner-border {
-    to { transform: rotate(360deg); }
-} 
 .list-prestations .spinner{
     display: inline-block;
     width: 2rem;
@@ -69,26 +65,36 @@
     }
 }
 @media (max-width: 800px){
+    .list-prestations {
+        margin-top: 60px;
+    }
     .list-prestations li {
         width: 500px;
         flex-direction: column;
-        margin: 20px;
+        margin: 15px;
     }
     .list-prestations li h3 {
         text-align: center;
+        font-size: 25px;
     }
     .list-prestations li p {
         width: max-content;
-        margin: 15px auto;
+        margin: 10px auto;
+        font-size: 25px;
+        padding: 7px 14px;
     }
 }
 @media (max-width: 550px){
     .list-prestations li {
         width: 350px;
     }
+    .list-prestations li p {
+        font-size: 20px;
+    }
 }
 @media (max-width: 400px){
     .list-prestations li {
         width: 300px;
+        margin: 10px;
     }
 }

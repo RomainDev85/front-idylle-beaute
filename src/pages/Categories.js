@@ -6,6 +6,7 @@ import HeaderCategory from '../components/HeaderCategory';
 import ListServices from '../components/ListServices';
 import { NavigationContext } from '../context/NavigationContext'
 import Menu from '../components/Menu';
+import { FirstLoadingContext } from '../context/FirstLoading';
 
 export default function Categories() {
 
@@ -13,6 +14,7 @@ export default function Categories() {
     const [loadInfo, setLoadInfo] = useState(true);
     const [categories, setCategories] = useState(null);
     const { menu } = useContext(NavigationContext)
+    const { setFirstLoading } = useContext(FirstLoadingContext)
 
 
 
@@ -24,15 +26,18 @@ export default function Categories() {
                 setLoadInfo(false)
             }
             setLoadInfo(false)
+            setFirstLoading(false);
         })
-    }, [category])
+    }, [category, setFirstLoading])
 
     if(loadInfo === false && categories === null){
         return <Redirect to='/'  />
     }
     return (
         <>
-        {menu ? <Menu/> : 
+        {menu ? 
+            <Menu/>
+        : 
             <>
                 < HeaderCategory />
                 < ListServices />

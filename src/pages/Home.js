@@ -18,11 +18,13 @@ export default function Home() {
         }, 2000)
     }, [setFirstLoading])
 
+
+
     return (
         <>
         {menu ? 
             <Menu/>
-            : 
+        : 
             <>
                 < Header />
                 < Presentation />

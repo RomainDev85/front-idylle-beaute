@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { NavigationContext } from '../context/NavigationContext';
 
 export default function Menu() {
@@ -17,15 +17,13 @@ export default function Menu() {
     }
 
     return (
-        <AnimatePresence>
-            <motion.section className="menu-navigation" initial={{opacity: 0, y: -800}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: -800}}>
-                <ul>
-                    <li><HashLink smooth to="/#institut" onClick={handleClick}><i className="far fa-star"></i>Institut</HashLink></li>
-                    <li><HashLink smooth to="/#produit" onClick={handleClick}><i className="far fa-star"></i>Nos produits</HashLink></li>
-                    <li><HashLink smooth to="/#services" onClick={handleClick}><i className="far fa-star"></i>Nos prestations</HashLink></li>
-                    <li><HashLink smooth to="/#contact" onClick={handleClick}><i className="far fa-star"></i>Contact</HashLink></li>
-                </ul>
-            </motion.section>
-        </AnimatePresence>
+        <motion.section className="menu-navigation" key="menu" initial={{opacity: 0, y: -800}} animate={{opacity: 1, y: 0, transition: {duration: .3}}} exit={{opacity: 0, y: -800}}>
+            <ul>
+                <motion.li initial={{opacity: 0, y: 40}} animate={{opacity: 1, y: 0, transition: {delay: 0.2}}} exit={{opacity: 0, y: 40}}><HashLink smooth to="/#institut" onClick={handleClick}><i className="far fa-star"></i>Institut</HashLink></motion.li>
+                <motion.li initial={{opacity: 0, y: 40}} animate={{opacity: 1, y: 0, transition: {delay: 0.3}}} exit={{opacity: 0, y: 40}}><HashLink smooth to="/#produit" onClick={handleClick}><i className="far fa-star"></i>Nos produits</HashLink></motion.li>
+                <motion.li initial={{opacity: 0, y: 40}} animate={{opacity: 1, y: 0, transition: {delay: 0.4}}} exit={{opacity: 0, y: 40}}><HashLink smooth to="/#services" onClick={handleClick}><i className="far fa-star"></i>Nos prestations</HashLink></motion.li>
+                <motion.li initial={{opacity: 0, y: 40}} animate={{opacity: 1, y: 0, transition: {delay: 0.5}}} exit={{opacity: 0, y: 40}}><HashLink smooth to="/#contact" onClick={handleClick}><i className="far fa-star"></i>Contact</HashLink></motion.li>
+            </ul>
+        </motion.section>
     )
 }

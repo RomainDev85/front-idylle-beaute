@@ -290,7 +290,7 @@
         }
     }
 }
-@media (max-width: 750px) {
+@media (max-width: 799px) {
     .header-categorie .image {
         width: 510px;
         height: 340px;
@@ -342,9 +342,17 @@
     }
 }
 @media (max-width: 550px) {
+    .header-categorie h2 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 40px;
+        color: #9C89B8;
+        font-family: 'DM Serif Display', serif;
+    }
     .header-categorie .image {
         width: 420px;
         height: 280px;
+        margin-top: 40px;
 
         img {
             width: 420px;
