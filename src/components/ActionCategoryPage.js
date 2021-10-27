@@ -32,9 +32,11 @@ export default function ActionCategoryPage() {
     return (
         <section className="action-page-category">
             <HashLink smooth to="/#contact">Contact</HashLink>
-            <div className="btn-other-service" style={btnDirection ? {display: 'none'} : {display: 'flex'}}>
-                <h4 onClick={handleClick}>Autres prestations</h4>
-            </div>
+            {!btnDirection &&  
+                <div className="btn-other-service" style={btnDirection ? {display: 'none'} : {display: 'flex'}}>
+                    <h4 onClick={handleClick}>Autres prestations</h4>
+                </div>
+            }
             <ul style={btnDirection ? {display: 'flex'} : {display: 'none'}}>
                 {!loadData && otherCategories.map((category) => (<li key={category.url_categorie}><Link to={category.url_categorie} onClick={handleClick}>{category.nom}</Link></li>))}
             </ul>

@@ -26,7 +26,8 @@ export default function Header() {
         if(window.innerWidth > 800){
             setLittleScreen(false)
         }
-    }, [loadInfo, category])
+      
+    }, [loadInfo, category, littleScreen])
     
     window.addEventListener("resize", () => {
         if(window.innerWidth > 800){

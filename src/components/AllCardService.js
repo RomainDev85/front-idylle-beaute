@@ -43,7 +43,7 @@ export default function AllCardService() {
    }
    else {
        return (
-           <section className="services" id="services">
+           <section className="services">
                <h1>Chargement</h1>
            </section>
        )
