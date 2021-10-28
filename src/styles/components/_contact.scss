@@ -82,10 +82,10 @@
     }
 }
 @media (max-width: 1500px) {
-    .contact-card li {
+    .contact .contact-card li {
         font-size: 24px;
     }
-    .contact-card p {
+    .contact .contact-card p {
         font-size: 24px;
     }
 }
@@ -95,6 +95,9 @@
     }
 }
 @media (max-width: 900px) {
+    .contact .contact-card h3 {
+        font-size: 40px;
+    }
     .contact iframe {
         width: 400px;
         height: 250px;
@@ -117,10 +120,10 @@
     }
 }
 @media (max-width: 700px) {
-    .contact-card li {
+    .contact .contact-card li {
         font-size: 20px;
     }
-    .contact-card p {
+    .contact .contact-card p {
         font-size: 20px;;
     }
 }
@@ -138,7 +141,7 @@
 }
 @media (max-width: 400px) {
     .contact {
-        margin-top: 60px;
+        margin-top: 50px;
     }
     .contact .contact-card {
         width: 300px;

@@ -39,13 +39,16 @@
     box-shadow: -1px 0px 29px -7px rgba(0,0,0,0.75);
 }
 .description .institut-img .slide1 {
-    animation: fadeinstitut1 9s infinite;
+    -webkit-animation: fadeinstitut1 9s infinite;
+            animation: fadeinstitut1 9s infinite;
 }
 .description .institut-img .slide2 {
-    animation: fadeinstitut2 9s infinite;
+    -webkit-animation: fadeinstitut2 9s infinite;
+            animation: fadeinstitut2 9s infinite;
 }
 .description .institut-img .slide3 {
-    animation: fadeinstitut3 9s infinite;
+    -webkit-animation: fadeinstitut3 9s infinite;
+            animation: fadeinstitut3 9s infinite;
 }
 .description .institut p {
     width: 600px;
@@ -82,19 +85,39 @@
     padding: 30px;
     line-height: 50px;
     color: #9C89B8;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
 }
 .description .baija-img .slide1 {
-    animation: fadeproduit1 12s infinite;
+    -webkit-animation: fadeproduit1 12s infinite;
+            animation: fadeproduit1 12s infinite;
 }
 .description .baija-img .slide2 {
-    animation: fadeproduit2 12s infinite;
+    -webkit-animation: fadeproduit2 12s infinite;
+            animation: fadeproduit2 12s infinite;
 }
 .description .baija-img .slide3 {
-    animation: fadeproduit3 12s infinite;
+    -webkit-animation: fadeproduit3 12s infinite;
+            animation: fadeproduit3 12s infinite;
 }
 .description .baija-img .slide4 {
-    animation: fadeproduit4 12s infinite;
+    -webkit-animation: fadeproduit4 12s infinite;
+            animation: fadeproduit4 12s infinite;
+}
+@-webkit-keyframes fadeinstitut1 {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @keyframes fadeinstitut1 {
     0% {
@@ -110,6 +133,20 @@
         opacity: 1;
     }
 }
+@-webkit-keyframes fadeinstitut2 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 @keyframes fadeinstitut2 {
     0% {
         opacity: 0;
@@ -119,6 +156,20 @@
     }
     75% {
         opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeinstitut3 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
     }
     100% {
         opacity: 0;
@@ -139,6 +190,24 @@
     }
 }
 
+@-webkit-keyframes fadeproduit1 {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeproduit1 {
     0% {
         opacity: 1;
@@ -156,6 +225,23 @@
         opacity: 1;
     }
 }
+@-webkit-keyframes fadeproduit2 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 @keyframes fadeproduit2 {
     0% {
         opacity: 0;
@@ -165,6 +251,23 @@
     }
     50% {
         opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeproduit3 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
     }
     75% {
         opacity: 0;
@@ -185,6 +288,23 @@
     }
     75% {
         opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeproduit4 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
     }
     100% {
         opacity: 0;
@@ -313,6 +433,9 @@
     }
 }
 @media (max-width: 700px){
+    .description {
+        margin-top: 20px;
+    }
     .description h2 {
         font-size: 30px;
     }

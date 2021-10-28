@@ -1,5 +1,7 @@
 .carte-service {
     display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 
     img {
@@ -127,11 +129,11 @@
     }
     .carte-service .content h3 {
         margin-top: 5px;
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
     .carte-service .content a {
-        font-size: 22px;
+        font-size: 20px;
         padding: 6px 10px;
     }
     .carte-service .content span {

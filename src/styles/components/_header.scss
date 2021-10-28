@@ -44,7 +44,8 @@
     .header-img img {
         width: 740px;
         height: 400px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         margin: 50px;
         box-shadow: -1px 0px 29px -7px rgba(0,0,0,0.75);
     }
@@ -111,7 +112,7 @@
                 height: 300px;
                 margin: 40px 20px;
                 position: absolute;
-                top: 300px;
+                top: 330px;
                 left: 48%;
                 transform: translateX(-50%);
             }
@@ -168,7 +169,7 @@
         .header-img img {
             width: 450px;
             height: 225px;
-            top: 250px;
+            top: 260px;
             left: 47%;
         }
     }
@@ -207,7 +208,7 @@
         .header-img img {
             width: 310px;
             height: 180px;
-            top: 200px;
+            top: 215px;
             left: 44%
         }
     }
@@ -237,7 +238,7 @@
         .header-img img {
             width: 310px;
             height: 180px;
-            top: 200px;
+            top: 215px;
             left: 44%
         }
     }
