@@ -150,11 +150,11 @@
         }
 
         .header-content h2 .first {
-            margin-right: 150px;
+            margin-right: 140px;
         }
 
         .header-content h2 .second {
-            margin-left: 150px;
+            margin-left: 140px;
         }
 
         .header-content .header-btn {
@@ -208,7 +208,7 @@
         .header-img img {
             width: 310px;
             height: 180px;
-            top: 215px;
+            top: 225px;
             left: 44%
         }
     }
@@ -217,11 +217,11 @@
     .header {
         .header-content {
             h2 .first {
-                margin-right: 50px;
+                margin-right: 45px;
             }
 
             h2 .second {
-                margin-left: 65px;
+                margin-left: 60px;
             }
 
             .header-btn {
@@ -231,14 +231,15 @@
             .header-btn a {
                 padding: 10px;
                 font-size: 20px;
-                margin: 10px;
+                margin: 5px;
+                border: 2px solid #9C89B8;
             }
         }
 
         .header-img img {
             width: 310px;
             height: 180px;
-            top: 215px;
+            top: 217px;
             left: 44%
         }
     }
