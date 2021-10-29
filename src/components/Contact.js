@@ -32,7 +32,7 @@ export default function Contact() {
                 <div className="contact-card">
                 <h3 className="titre">Contact</h3>
                 <ul className="join">
-                    <li><i className="fas fa-phone"></i><a href={infoSociety.telephone} style={{cursor: 'initial'}} >{phoneNumber(infoSociety.telephone)}</a></li>
+                    <li><i className="fas fa-phone"></i><a href={"tel:" + infoSociety.telephone} style={{cursor: 'initial'}} >{phoneNumber(infoSociety.telephone)}</a></li>
                     <li><a href={"https://" + infoSociety.facebook} target="_blank" rel="noreferrer"><i className="fab fa-facebook"></i> Idylle Beauté</a></li>
                     <li><i className="fas fa-envelope"></i> {infoSociety.email}</li>
                 </ul>
