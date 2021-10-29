@@ -26,6 +26,7 @@
             font-size: 38px;
             font-family: 'DM Serif Display', serif;
             color: #9C89B8;
+            text-align: center;
         }
 
         a {
@@ -42,10 +43,12 @@
             width: 50px; 
             height: 5px;
             background: #9C89B8;
-            position: absolute;
-            top: 48%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: table;
+            margin:0 auto;
+            // position: absolute;
+            // top: 48%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
         }
     }
 }
