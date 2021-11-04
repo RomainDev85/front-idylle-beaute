@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useEffect, useContext, useState } from 'react'
 import AllCardService from '../components/AllCardService'
 import Contact from '../components/Contact'
 import Header from '../components/Header'
@@ -9,8 +9,10 @@ import Menu from '../components/Menu'
 
 export default function Home() {
     
-    const { setFirstLoading } = useContext(FirstLoadingContext)
-    const { menu } = useContext(NavigationContext)
+    const { setFirstLoading } = useContext(FirstLoadingContext);
+    const { menu } = useContext(NavigationContext);
+    const [screenY, setScreenY] = useState(0)
+    
 
     useEffect(() => {
         setTimeout(() => {
@@ -19,7 +21,11 @@ export default function Home() {
     }, [setFirstLoading])
 
 
-
+    window.addEventListener("scroll", () => {
+        if(!menu) setScreenY(window.scrollY)
+    })
+    
+            
     return (
         <>
         {menu ? 

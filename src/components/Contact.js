@@ -34,7 +34,7 @@ export default function Contact() {
                 <ul className="join">
                     <li><i className="fas fa-phone"></i><a href={"tel:" + infoSociety.telephone} style={{cursor: 'initial'}} >{phoneNumber(infoSociety.telephone)}</a></li>
                     <li><a href={infoSociety.facebook} target="_blank" rel="noreferrer"><i className="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href={infoSociety.instagram} target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href={infoSociety.instagram} target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i> Instagram</a></li>
                     <li><i className="fas fa-envelope"></i> {infoSociety.email}</li>
                 </ul>
                 <iframe title="Test" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.6864992316346!2d-1.8314550835975292!3d46.67245027913387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48045092778b5281%3A0xc7c050a38c59febc!2s21%20Rue%20Georges%20Clemenceau%2C%2085220%20L&#39;Aiguillon-sur-Vie!5e0!3m2!1sfr!2sfr!4v1620816008034!5m2!1sfr!2sfr" loading="lazy"></iframe>
