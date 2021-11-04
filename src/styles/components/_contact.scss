@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     background-attachment: fixed;
+    scroll-margin-top: 135px;
 
     iframe {
         width: 600px;
@@ -126,6 +127,9 @@
     .contact .contact-card p {
         font-size: 20px;;
     }
+    .contact {
+        scroll-margin-top: 95px;
+    }
 }
 @media (max-width: 550px) {
     .contact {
@@ -143,6 +147,11 @@
     }
     .contact-card li {
         margin-bottom: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .contact {
+        scroll-margin-top: 86px;
     }
 }
 @media (max-width: 400px) {

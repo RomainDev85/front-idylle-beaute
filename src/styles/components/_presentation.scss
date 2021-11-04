@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     margin-top: 70px;
+    scroll-margin-top: 155px;
 }
 .description .institut-img {
     position: relative;
@@ -65,6 +66,7 @@
     justify-content: center;
     margin-top: 100px;
     align-items: center;
+    scroll-margin-top: 155px;
 } 
 .description .produit .baija-img {
     position: relative;
@@ -448,6 +450,12 @@
     .description h2 .third {
         margin-left: 250px;   
     }
+    .description .produit {
+        scroll-margin-top: 120px;
+    }
+    .description .institut {
+        scroll-margin-top: 120px;
+    }
     .description .produit p {
         font-size: 20px;
         line-height: 30px;
@@ -488,6 +496,12 @@
     .description h2 .third {
         margin-top: 15px;
         margin-left: 40px;   
+    }
+    .description .produit {
+        scroll-margin-top: 100px;
+    }
+    .description .institut {
+        scroll-margin-top: 100px;
     }
     .description .produit p {
         width: 300px;

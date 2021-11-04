@@ -2,7 +2,8 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
+    // position: relative;
+    position: fixed;
     background-color: #F0E6EF;
     z-index: 5;
     // transition: 0.4s;
@@ -115,7 +116,65 @@ nav {
         color: #F0E6EF;
     }
 }
+.undernav {
+    height: 135px;
+    position: relative;
+}
+.custom-shape-divider-bottom-1636017220 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1636017220 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 5px;
+}
+
+.custom-shape-divider-bottom-1636017220 .shape-fill {
+    fill: #823085;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1636017220 svg {
+        width: calc(100% + 1.3px);
+        height: 10px;
+    }
+}
+.custom-shape-divider-top-1636017339 {
+    position: absolute;
+    top: 135px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1636017339 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 5px;
+}
+
+.custom-shape-divider-top-1636017339 .shape-fill {
+    fill: #823085;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1636017339 svg {
+        width: calc(100% + 1.3px);
+        height: 10px;
+    }
+}
 @media (max-width: 1150px) {
     nav {
         justify-content: start;
@@ -164,6 +223,12 @@ nav {
             transform: translateY(12px);
         }
     }
+    .undernav {
+        height: 108px;
+    }
+    .custom-shape-divider-top-1636017339 {
+        top: 108px;
+    }
 }
 @media (max-width: 500px) {
     nav {
@@ -197,5 +262,11 @@ nav {
         .menu-btn__burger::after {
             transform: translateY(6px);
         }
+    }
+    .undernav {
+        height: 86px;
+    }
+    .custom-shape-divider-top-1636017339 {
+        top: 86px;
     }
 }
