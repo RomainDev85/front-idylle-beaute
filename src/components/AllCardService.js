@@ -28,12 +28,12 @@ export default function AllCardService() {
    if(loadCategories === false){
        return (
            <section className="services" id="services">
-               {categories.map((category) => (
+               {categories.map((category,index) => (
                        <CardService
                            title={category.nom}
                            image={category.image}
                            urlCategory={category.url_categorie}
-                           placeImage={check(category.id) ? "first" : "second"}
+                           placeImage={check(index) ? "second" : "first"}
                            key={category.id}
                        />
                    ))

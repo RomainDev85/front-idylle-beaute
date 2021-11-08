@@ -14,14 +14,22 @@ export default function ListServices() {
         .then(res => {
             setServices(res.data)
             setLoadInfo(false)
+            console.log(services);
         })
     }, [loadInfo, category])
+
 
     return (
         <div className="list-prestations">
             <ul>
                 {!isEmpty(services) && services.map(service => (
-                    < OneService key={service.prestation_id} title={service.nom_prestation} price={service.price} />
+                    < OneService 
+                        key={service.prestation_id} 
+                        title={service.nom_prestation} 
+                        price={service.price} 
+                        description={service.description}
+                        time={service.duree}
+                    />
                 ))}
             </ul>
         </div>

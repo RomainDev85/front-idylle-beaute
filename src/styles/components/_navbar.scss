@@ -120,34 +120,6 @@ nav {
     height: 135px;
     position: relative;
 }
-.custom-shape-divider-bottom-1636017220 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1636017220 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 5px;
-}
-
-.custom-shape-divider-bottom-1636017220 .shape-fill {
-    fill: #823085;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1636017220 svg {
-        width: calc(100% + 1.3px);
-        height: 10px;
-    }
-}
 .custom-shape-divider-top-1636017339 {
     position: absolute;
     top: 135px;

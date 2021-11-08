@@ -2,99 +2,132 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
-}
-.list-prestations ul {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.list-prestations li {
-    display: flex;
-    width: 1400px;
-    justify-content: space-between;
-}
-.list-prestations li h3 {
-    display: flex;
-    align-self: center;
-    font-size: 30px;
-    color: #9C89B8;
-    font-family: 'DM Serif Display', serif;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-.list-prestations li p {
-    display: inline-block;
-    white-space:nowrap;
-    font-size: 40px;
-    margin: 20px 10px;
-    padding: 10px 20px;
-    color: #F0E6EF;
-    background: #9C89B8;
-    font-family: 'DM Serif Display', serif;
-}
-.list-prestations .spinner{
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    vertical-align: text-bottom;
-    border: .25em solid currentColor;
-    border-right-color: transparent;
-    border-radius: 50%;
-    -webkit-animation: spinner-border .75s linear infinite;
-    animation: spinner-border .75s linear infinite;
-    margin: 50px auto;
-    color: #9C89B8
-}
+    
+    
+    ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    
+        li {
+            display: flex;
+            width: 1400px;
+            justify-content: space-between;
+            padding: 15px 0px;
 
-/* media queries */
+            .left {
+
+                p {
+                    margin-left: 20px;
+                    font-size: 20px;
+                    font-family: 'DM Serif Display', serif;
+                    color: #823085;
+                    width: 65%;                  
+                }
+                h3 {
+                    font-size: 30px;
+                    color: #9C89B8;
+                    font-family: 'DM Serif Display', serif;
+
+                    
+                }
+                h3::first-letter {
+                    text-transform: uppercase;
+                }
+
+            }
+            .right {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;            
+
+                h3 {
+                    display: inline-block;
+                    white-space:nowrap;
+                    padding: 10px 20px;
+                    color: #F0E6EF;
+                    background: #9C89B8;
+                    font-family: 'DM Serif Display', serif;
+                    height: min-content;
+                }
+                p {
+                    display: inline-block;
+                    white-space:nowrap;
+                    font-size: 30px;
+                    margin: 10px 20px;
+                    color: #9C89B8;
+                    font-family: 'DM Serif Display', serif;
+                    font-weight: lighter;
+                    letter-spacing: .1px;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1500px){
-    .list-prestations li {
+    .list-prestations ul li {
         width: 1150px;
     }
 }
 @media (max-width: 1200px){
-    .list-prestations li {
+    .list-prestations ul li {
         width: 900px;
     }
 }
 @media (max-width: 1000px){
-    .list-prestations li {
+    .list-prestations ul li {
         width: 750px;
+
+        .left {
+            p {
+                width: 75%;
+            }
+        }
     }
 }
 @media (max-width: 800px){
     .list-prestations {
         margin-top: 60px;
-    }
-    .list-prestations li {
-        width: 500px;
-        flex-direction: column;
-        margin: 15px;
-    }
-    .list-prestations li h3 {
-        text-align: center;
-        font-size: 25px;
-    }
-    .list-prestations li p {
-        width: max-content;
-        margin: 10px auto;
-        font-size: 25px;
-        padding: 7px 14px;
+
+        ul {
+            li {
+                width: 500px;
+                flex-direction: column;
+                margin: 5px;
+
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    p{
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+                .right {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;                                   
+                }
+            }
+        }
     }
 }
 @media (max-width: 550px){
-    .list-prestations li {
+    .list-prestations ul li {
         width: 350px;
-    }
-    .list-prestations li p {
-        font-size: 20px;
     }
 }
 @media (max-width: 400px){
-    .list-prestations li {
+    .list-prestations ul li {
         width: 300px;
-        margin: 10px;
+        padding: 10px 0px;
     }
 }
