@@ -5,7 +5,7 @@
 
     h2 {
         text-align: center;
-        margin-top: 50px;
+        margin-top: 250px;
         font-size: 60px;
         color: #9C89B8;
         font-family: 'DM Serif Display', serif;
@@ -167,22 +167,27 @@
     }
 }
 @media (max-width: 1750px) {
-    .header-categorie .image {
-        width: 1400px;
-        height: 700px;
+    .header-categorie {
+        h2 {
+            margin-top: 250px;
+        }
+        .image {
+            width: 1400px;
+            height: 700px;
 
-        img {
-            width: 525px;
-            height: 350px;
-        }
-        #img3 {
-            top:300px;
-        }
-        #img4 {
-            top:300px;
-        }
-        #img5 {
-            top:300px;
+            img {
+                width: 525px;
+                height: 350px;
+            }
+            #img3 {
+                top:300px;
+            }
+            #img4 {
+                top:300px;
+            }
+            #img5 {
+                top:300px;
+            }
         }
     }
 }
@@ -291,60 +296,73 @@
     }
 }
 @media (max-width: 799px) {
-    .header-categorie .image {
-        width: 510px;
-        height: 340px;
+    .header-categorie {
 
-        img {
+        h2 {
+           margin-top: 200px; 
+        }
+        .image {
             width: 510px;
             height: 340px;
+    
+            img {
+                width: 510px;
+                height: 340px;
+            }
+            #img1 {
+                position: absolute;
+                transform: rotate(0deg);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: fadeimage1 15s infinite;
+            }
+            #img2 {
+                position: absolute;
+                transform: rotate(0deg);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: fadeimage2 15s infinite;
+            }
+            #img3 {
+                position: absolute;
+                transform: rotate(0deg);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: fadeimage3 15s infinite;
+            }
+            #img4 {
+                position: absolute;
+                transform: rotate(0deg);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: fadeimage4 15s infinite;
+            }
+            #img5 {
+                position: absolute;
+                transform: rotate(0deg);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: fadeimage5 15s infinite;
+            }
         }
-        #img1 {
-            position: absolute;
-            transform: rotate(0deg);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: fadeimage1 15s infinite;
-        }
-        #img2 {
-            position: absolute;
-            transform: rotate(0deg);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: fadeimage2 15s infinite;
-        }
-        #img3 {
-            position: absolute;
-            transform: rotate(0deg);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: fadeimage3 15s infinite;
-        }
-        #img4 {
-            position: absolute;
-            transform: rotate(0deg);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: fadeimage4 15s infinite;
-        }
-        #img5 {
-            position: absolute;
-            transform: rotate(0deg);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: fadeimage5 15s infinite;
-        }
+    }
+    
+    
+}
+@media (max-width: 700px) {
+    .header-categorie h2 {
+        margin-top: 150px;
     }
 }
 @media (max-width: 550px) {
     .header-categorie h2 {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 120px;
         font-size: 40px;
         color: #9C89B8;
         font-family: 'DM Serif Display', serif;
