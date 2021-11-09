@@ -24,7 +24,7 @@ export default function Presentation() {
         <section className="description">
             <h2>
                 <motion.span className="first" initial={firstLoading ? {opacity:0, x: -50} : {}} animate={{opacity:1, x:0, transition: {delay: 1.1}}}>La beauté et le soin</motion.span>
-                <motion.span className="second" initial={firstLoading ? {opacity:0, x: -50} : {}} animate={{opacity:1, x:0, transition: {delay: 1.3}}}>à portée de main.</motion.span>
+                <motion.span className="second" initial={firstLoading ? {opacity:0, x: 50} : {}} animate={{opacity:1, x:0, transition: {delay: 1.3}}}>à portée de main.</motion.span>
             </h2>
             <div className="institut" id="institut">
                 <motion.div className="institut-img" initial={firstLoading ? {opacity:0, x: -50} : {}} animate={{opacity:1, x:0, transition: {delay: 1.5}}}>
