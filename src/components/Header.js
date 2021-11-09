@@ -7,19 +7,14 @@ export default function Header() {
     const { firstLoading } = useContext(FirstLoadingContext)
 
     return (
+
         <section className="header">
-            <div className="header-content">
-                <h2>
-                    <motion.span className="first" initial={firstLoading ? {opacity:0, x: -50} : {}} animate={{opacity:1, x:0, transition: {delay: .5}}}>La beauté et le soin</motion.span>
-                    <motion.span className="second" initial={firstLoading ? {opacity:0, x: 50} : {}} animate={{opacity:1, x:0, transition: {delay: .7}}}> à portée de main.</motion.span>
-                </h2>
-                <motion.div className="header-btn" initial={firstLoading ? {opacity:0, y: 50} : {}} animate={{opacity:1, y:0, transition: {delay: 1.1}}}>
-                    <a href="/#services">Prestations</a>
-                    <a href="/#contact">Contactez moi</a>
-                </motion.div>
-            </div>
-            <motion.div className="header-img">
-                <motion.img src="./img/header-img.jpg" alt="" style={firstLoading ? {opacity: 0} : {}} inital={firstLoading ? {opacity:0} : {}} animate={{opacity:1, zIndex: 1, transition: {delay:.9}}}/>
+            <img className="fleur-haut" src="./img/fleur-haut.png" alt=""/>
+            <motion.h1 initial={firstLoading ? {opacity:0, y: -10} : {}} animate={{opacity:1, y:0, transition: {delay: .5}}}>L'aiguillon sur vie</motion.h1>
+            <motion.img className="logo" src="./img/logo-idyllebeaute-fonce.svg" alt="" initial={firstLoading ? {opacity:0, y: 10} : {}} animate={{opacity:1, y:0, transition: {delay: .7}}}/>
+            <motion.div className="header-btn" initial={firstLoading ? {opacity:0, y: 10} : {}} animate={{opacity:1, y:0, transition: {delay: .9}}}>
+                <a href="/#services">Prestations</a>
+                <a href="/#contact">Contactez-moi</a>
             </motion.div>
         </section>
     )

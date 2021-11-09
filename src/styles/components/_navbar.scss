@@ -77,6 +77,10 @@ nav {
         flex-direction: column;
         align-items: center;
     }
+    img {
+        width: 262px;
+        height: 121px;
+    }
 }
 .navigation-open {
     position: fixed;
@@ -131,7 +135,7 @@ nav {
         justify-content: start;
         height: 108px;
 
-        .logo {
+        img {
             height: 98px;
             width: 196px;
         }
@@ -169,7 +173,7 @@ nav {
     nav {
         height: 86px;
 
-        .logo {
+        img {
             height: 76px;
             width: 152px;
         }
