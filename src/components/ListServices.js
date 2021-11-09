@@ -16,7 +16,7 @@ export default function ListServices() {
             setLoadInfo(false)
             console.log(services);
         })
-    }, [loadInfo, category])
+    }, [loadInfo, category, services])
 
 
     return (
