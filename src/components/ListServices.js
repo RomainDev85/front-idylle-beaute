@@ -21,7 +21,7 @@ export default function ListServices() {
             setServices(res.data)
             setLoadInfo(false)
         })
-    }, [loadInfo, category])
+    }, [loadInfo, category, services])
 
 
     return (
