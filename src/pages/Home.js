@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from 'react'
+import React, { useEffect, useContext } from 'react'
 import AllCardService from '../components/AllCardService'
 import Contact from '../components/Contact'
 import Header from '../components/Header'
@@ -11,7 +11,6 @@ export default function Home() {
     
     const { setFirstLoading } = useContext(FirstLoadingContext);
     const { menu } = useContext(NavigationContext);
-    const [screenY, setScreenY] = useState(0)
     
 
     useEffect(() => {
@@ -19,11 +18,6 @@ export default function Home() {
             setFirstLoading(false)
         }, 1000)
     }, [setFirstLoading])
-
-
-    window.addEventListener("scroll", () => {
-        if(!menu) setScreenY(window.scrollY)
-    })
     
             
     return (

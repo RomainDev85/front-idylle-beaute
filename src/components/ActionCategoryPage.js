@@ -27,8 +27,6 @@ export default function ActionCategoryPage() {
         })
     }, [category])
 
-    console.log(otherCategories);
-
     return (
         <section className="action-page-category">
             <HashLink smooth to="/#contact">Contact</HashLink>
