@@ -41,12 +41,9 @@ export default function AllCardService() {
            </section>
        )
    }
-   else {
-       return (
-           <section className="services">
-               <h1>Chargement</h1>
-           </section>
-       )
-
-   }
+    return (
+        <section className="services" id="services">
+            <span className="loader" style={{margin: "20px"}}></span>
+        </section>
+    )
 }

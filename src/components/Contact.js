@@ -54,8 +54,8 @@ export default function Contact() {
         )
     }
     return (
-        <section className="contact" style={{backgroundImage: "url('./img/background-contact.jpg')"}}>
-            <h1>Chargement</h1>
+        <section className="services" id="services">
+            <span className="loader" style={{margin: "20px"}}></span>
         </section>
     )
 }

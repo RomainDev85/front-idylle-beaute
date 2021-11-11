@@ -11,16 +11,12 @@
         font-family: 'DM Serif Display', serif;
     }
 
-    .image {
+    .image-desktop {
         width: 1600px;
         height: 800px;
         position: relative;
-        display: flex;
-        justify-content: center;
-        // background: blue;
         margin-top: 75px;
-
-
+        display : block;
 
         img {
             width: 600px;
@@ -30,7 +26,6 @@
             box-shadow: -1px 0px 29px -7px rgba(0,0,0,0.75);
             position: absolute;
         }
-
         #img1 {
             transform: rotate(6deg);
             z-index: 2;
@@ -51,9 +46,10 @@
         }
 
         #img4 {
-            transform: rotate(-3deg);
             z-index: 3;
             top: 400px;
+            left: 500px;
+            
         }
         
         #img5 {
@@ -61,6 +57,43 @@
             z-index: 5;
             top: 400px;
             right: 0px;
+        }
+
+    }
+    .image-mobile {
+        width: 510px;
+        height: 340px;
+        display: block;
+        position: relative;
+        margin-top: 75px;
+
+
+
+        img {
+            margin: 10px auto;
+            box-shadow: -1px 0px 29px -7px rgba(0,0,0,0.75);
+            width: 510px;
+            height: 340px;
+        }
+        #img1 {
+            animation: fadeimage1 15s infinite;
+            position: absolute;
+        }
+        #img2 {
+            animation: fadeimage2 15s infinite;
+            position: absolute;
+        }
+        #img3 {
+            animation: fadeimage3 15s infinite;
+            position: absolute;
+        }
+        #img4 {
+            animation: fadeimage4 15s infinite;
+            position: absolute;
+        }
+        #img5 {
+            animation: fadeimage5 15s infinite;
+            position: absolute;
         }
     }
 
@@ -171,7 +204,7 @@
         h2 {
             margin-top: 250px;
         }
-        .image {
+        .image-desktop {
             width: 1400px;
             height: 700px;
 
@@ -184,6 +217,7 @@
             }
             #img4 {
                 top:300px;
+                left: 430px;
             }
             #img5 {
                 top:300px;
@@ -192,7 +226,7 @@
     }
 }
 @media (max-width: 1500px) {
-    .header-categorie .image {
+    .header-categorie .image-desktop {
         width: 1200px;
         height: 600px;
 
@@ -211,6 +245,7 @@
         }
         #img4 {
             top:250px;
+            left: 370px;
         }
         #img5 {
             top:250px;
@@ -218,7 +253,7 @@
     }
 }
 @media (max-width: 1300px) {
-    .header-categorie .image {
+    .header-categorie .image-desktop {
         width: 1000px;
         height: 500px;
 
@@ -237,6 +272,7 @@
         }
         #img4 {
             top:250px;
+            left: 300px;
         }
         #img5 {
             top:250px;
@@ -244,7 +280,7 @@
     }
 }
 @media (max-width: 1100px) {
-    .header-categorie .image {
+    .header-categorie .image-desktop {
         width: 800px;
         height: 400px;
 
@@ -263,6 +299,7 @@
         }
         #img4 {
             top:200px;
+            left: 230px;
         }
         #img5 {
             top:200px;
@@ -270,7 +307,7 @@
     }
 }
 @media (max-width: 850px) {
-    .header-categorie .image {
+    .header-categorie .image-desktop {
         width: 700px;
         height: 350px;
 
@@ -289,70 +326,20 @@
         }
         #img4 {
             top:170px;
+            left: 210px;
         }
         #img5 {
             top:170px;
         }
     }
 }
-@media (max-width: 799px) {
+@media (max-width: 800px) {
     .header-categorie {
 
         h2 {
            margin-top: 200px; 
         }
-        .image {
-            width: 510px;
-            height: 340px;
-    
-            img {
-                width: 510px;
-                height: 340px;
-            }
-            #img1 {
-                position: absolute;
-                transform: rotate(0deg);
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                animation: fadeimage1 15s infinite;
-            }
-            #img2 {
-                position: absolute;
-                transform: rotate(0deg);
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                animation: fadeimage2 15s infinite;
-            }
-            #img3 {
-                position: absolute;
-                transform: rotate(0deg);
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                animation: fadeimage3 15s infinite;
-            }
-            #img4 {
-                position: absolute;
-                transform: rotate(0deg);
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                animation: fadeimage4 15s infinite;
-            }
-            #img5 {
-                position: absolute;
-                transform: rotate(0deg);
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                animation: fadeimage5 15s infinite;
-            }
-        }
     }
-    
-    
 }
 @media (max-width: 700px) {
     .header-categorie h2 {
@@ -367,7 +354,7 @@
         color: #9C89B8;
         font-family: 'DM Serif Display', serif;
     }
-    .header-categorie .image {
+    .header-categorie .image-mobile {
         width: 420px;
         height: 280px;
         margin-top: 40px;
@@ -379,7 +366,7 @@
     }
 }
 @media (max-width: 450px) {
-    .header-categorie .image {
+    .header-categorie .image-mobile {
         width: 300px;
         height: 200px;
 
