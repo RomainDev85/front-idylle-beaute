@@ -28,9 +28,9 @@ export default function Presentation() {
             </h2>
             <div className="institut" id="institut">
                 <motion.div className="institut-img" initial={firstLoading ? {opacity:0, x: -50} : {}} animate={{opacity:1, x:0, transition: {delay: 1.5}}}>
-                    <img src="./img/carousel-institut/manucure.jpg" alt="" className="slide1"/>
-                    <img src="./img/carousel-institut/institut.png" alt="" className="slide2"/>
-                    <img src="./img/carousel-institut/massage.jpg" alt="" className="slide3"/>
+                    <img src="./img/carousel-institut/manucure.jpg" alt="manucure" className="slide1"/>
+                    <img src="./img/carousel-institut/institut.png" alt="institut" className="slide2"/>
+                    <img src="./img/carousel-institut/massage.jpg" alt="massage" className="slide3"/>
                 </motion.div>
                 <motion.p initial={firstLoading ? {opacity:0, x: 50} : {}} animate={{opacity:1, x:0, transition: {delay: 1.5}}}>Pauline vous acceuille dans son institut Idylle Beauté, situé à l’Aiguillon sur vie en Vendée. Voyagez au pays de la relaxation et du bien-être, dans une ambiance chaleureuse. Grâce à ses soins du visage, corps, onglerie, épilations etc.<br/>Venez tenter l’experience !</motion.p>
             </div>
