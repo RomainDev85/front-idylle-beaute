@@ -12,16 +12,19 @@ export default function ListServices() {
     const [littleCategories, setLittleCategories] = useState(null);
 
     useEffect(() => {
+        axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/${category}`)
+        .then( res => {
+            setServices(res.data)
+            setLoadInfo(false)
+        })
+    }, [loadInfo, category])
+
+    useEffect(() => {
         axios.get(`${process.env.REACT_APP_BASE_URL}/api/categories/littlecategory/${category}`)
         .then((res) => {
             setLittleCategories(res.data)
         })
-        axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/${category}`)
-        .then(res => {
-            setServices(res.data)
-            setLoadInfo(false)
-        })
-    }, [loadInfo, category, services])
+    }, [category, services])
 
 
     return (

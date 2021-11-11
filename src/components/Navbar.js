@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { NavigationContext } from '../context/NavigationContext';
+import { ScrollPositionContext } from '../context/ScrollPositionContext';
 import { motion } from 'framer-motion';
 
 
 export default function Navbar() {
 
     const { setMenu, menu } = useContext(NavigationContext)
+    const { setScrollPosition } = useContext(ScrollPositionContext)
 
     function handleClick(){
         if(menu){
@@ -13,6 +15,7 @@ export default function Navbar() {
         }
         else {
             setMenu(true)
+            setScrollPosition(window.scrollY)
         }
     }
 
