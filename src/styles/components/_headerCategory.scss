@@ -77,23 +77,38 @@
         }
         #img1 {
             animation: fadeimage1 15s infinite;
-            position: absolute;
+            position: absolute !important;
+            left: 50% !important;
+            top: 0px !important;
+            transform: translateX(-50%) !important;
         }
         #img2 {
             animation: fadeimage2 15s infinite;
-            position: absolute;
+            position: absolute !important;
+            left: 50% !important;
+            top: 0px !important;
+            transform: translateX(-50%) !important;
         }
         #img3 {
             animation: fadeimage3 15s infinite;
-            position: absolute;
+            position: absolute !important;
+            left: 50% !important;
+            top: 0px !important;
+            transform: translateX(-50%) !important;
         }
         #img4 {
             animation: fadeimage4 15s infinite;
-            position: absolute;
+            position: absolute !important;
+            left: 50% !important;
+            top: 0px !important;
+            transform: translateX(-50%) !important;
         }
         #img5 {
             animation: fadeimage5 15s infinite;
-            position: absolute;
+            position: absolute !important;
+            left: 50% !important;
+            top: 0px !important;
+            transform: translateX(-50%) !important;;
         }
     }
 
