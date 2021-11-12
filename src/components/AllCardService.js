@@ -15,6 +15,7 @@ export default function AllCardService() {
                 setloadCategories(false)
             })
         }
+
     }, [categories, loadCategories])
 
     // Check if id category can be equal split
@@ -27,7 +28,7 @@ export default function AllCardService() {
 
    if(loadCategories === false){
        return (
-           <section className="services" id="services">
+           <section className="services" id="prestations">
                {categories.map((category,index) => (
                        <CardService
                            title={category.nom}
@@ -42,7 +43,7 @@ export default function AllCardService() {
        )
    }
     return (
-        <section className="services" id="services">
+        <section className="services" id="prestations">
             <span className="loader" style={{margin: "20px"}}></span>
         </section>
     )
