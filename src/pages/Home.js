@@ -18,6 +18,12 @@ export default function Home() {
             setFirstLoading(false)
         }, 1000)
     })
+
+    // console.log(document.getElementById("prestations"));
+    // console.log(document.getElementById("contact"));
+    
+    if(document.getElementById("contact")) console.log(document.getElementById("contact").clientHeight);
+    if(document.getElementById("prestations")) console.log(document.getElementById("prestations").clientHeight);
             
     return (
         <>

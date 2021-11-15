@@ -10,7 +10,7 @@ export default function CardService({title, image, urlCategory, placeImage}) {
     const { firstLoading } = useContext(FirstLoadingContext);
     const animationImage = useAnimation();
     const animationText = useAnimation();
-    const { inView } = useInView();
+    const { inView, ref } = useInView();
 
     if(inView){
         animationImage.start({
@@ -32,13 +32,13 @@ export default function CardService({title, image, urlCategory, placeImage}) {
     }
 
     return (
-        <div className={`carte-service ${placeImage}`}>
-            <img src={"./img/carte-categorie/" + image} alt="categorie"/>
-            <div className="content">            
+        <div className={`carte-service ${placeImage}`} ref={ref}>
+            <motion.img src={"./img/carte-categorie/" + image} alt="categorie" initial={firstLoading ? {y: 40, opacity: 0} : {}} animate={firstLoading ? animationImage : {}}/>
+            <motion.div className="content" initial={firstLoading ? {y: 40, opacity: 0} : {}} animate={firstLoading ? animationText : {}}>            
                 <h3>{title}</h3>
                 <span></span>
                 <Link to={"/" + urlCategory } >Plus d'infos</Link>
-            </div>
+            </motion.div>
         </div>
     )
 }

@@ -16,6 +16,7 @@ export default function Contact() {
             })
         }
     }, [loadInfo, infoSociety])
+    // console.log(infoSociety);
 
 
 
