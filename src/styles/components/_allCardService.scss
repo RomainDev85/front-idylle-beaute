@@ -2,7 +2,9 @@
     margin: 100px 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     scroll-margin-top: 140px;
+    min-height: 640px;
 
     .first {
         flex-direction: column;

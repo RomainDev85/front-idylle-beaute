@@ -33,7 +33,7 @@ export default function Header() {
 
         window.addEventListener("resize", screen, { passive: true })
 
-        return () => window.removeEventListener("resize", screen, { passive: true })
+        return () => window.removeEventListener("resize", screen)
 
 
     }, [loadInfo, category])

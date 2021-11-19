@@ -24,7 +24,8 @@ export default function AllCardService() {
         if(nbr%2 === 0) return true; 
         //  cant be
         else return false;
-   }
+    }
+
 
    if(loadCategories === false){
        return (

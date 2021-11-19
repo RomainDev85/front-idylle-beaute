@@ -7,7 +7,8 @@ export default function Menu() {
 
     const { menu, setMenu } = useContext(NavigationContext);
 
-    function handleClick(){
+    function handleClick(e){
+        console.log(e);
         if(menu){
             setMenu(false)
         }
