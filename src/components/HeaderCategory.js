@@ -16,7 +16,6 @@ export default function Header() {
         if(window.innerWidth < 800) setLittleScreen(true)
         else setLittleScreen(false)
 
-
         axios.get(`${process.env.REACT_APP_BASE_URL}/api/categories/${ category }`)
         .then((res) => {
             if(res.data){
@@ -26,14 +25,14 @@ export default function Header() {
         })
         .catch((err) => console.log(err))
 
-
-        const screen = () => {
+        const screen = (e) => {
+            e.preventDefault();
             if(window.innerWidth < 800) setLittleScreen(true)
             else setLittleScreen(false)
         }
+
         window.addEventListener("resize", screen, { passive: true })
 
-        // Au moment du demontage du composant arrete d'ecoute la taille de la fenetre
         return () => window.removeEventListener("resize", screen, { passive: true })
 
 

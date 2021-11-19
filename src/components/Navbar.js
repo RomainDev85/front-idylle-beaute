@@ -1,13 +1,10 @@
 import React, { useContext } from 'react';
 import { NavigationContext } from '../context/NavigationContext';
-import { ScrollPositionContext } from '../context/ScrollPositionContext';
-import { motion } from 'framer-motion';
 
 
 export default function Navbar() {
 
     const { setMenu, menu } = useContext(NavigationContext)
-    const { setScrollPosition } = useContext(ScrollPositionContext)
 
     function handleClick(){
         if(menu){
@@ -15,28 +12,23 @@ export default function Navbar() {
         }
         else {
             setMenu(true)
-            setScrollPosition(window.scrollY)
         }
     }
 
     return (
         <>
-            <nav className={menu ? 'navigation-open' : ''}>
+            <nav className={menu ? 'navigation-open' : 'navigation'}>
                 <div className="navbar">
-                    <div className="entreprise">
-                        
+                    <div className="entreprise">                     
                         {menu ? 
-                                <motion.img src="./img/logo-idyllebeaute-clair.svg" alt="" initial={{opacity:0, y: 10}} animate={{opacity:1, y:0, transition: {delay: .3}}}/>
+                                <img src="./img/logo-idyllebeaute-clair.svg" alt=""/>
                             :
-                                <motion.img src="./img/logo-idyllebeaute-fonce.svg" alt="" initial={{opacity:0, y: 10}} animate={{opacity:1, y:0, transition: {delay: .3}}}/>
+                                <img src="./img/logo-idyllebeaute-fonce.svg" alt=""/>
                         }
-
-                        {/* <motion.h1 initial={{opacity:0, y: 10}} animate={{opacity:1, y:0, transition: {delay: .2}}}>Idylle Beauté</motion.h1>
-                        <motion.h2 initial={{opacity:0, y: 10}} animate={{opacity:1, y:0, transition: {delay: .4}}}>Estheticienne</motion.h2> */}
                     </div>
-                    <motion.div className={menu ? 'menu-btn open' : 'menu-btn'} onClick={handleClick} initial={{opacity:0}} animate={{opacity:1, transition: {delay: .3}}}>
+                    <div className={menu ? 'menu-btn open' : 'menu-btn'} onClick={handleClick}>
                         <div className="menu-btn__burger"></div>
-                    </motion.div>
+                    </div>
                 </div>
                 <div className="custom-shape-divider-bottom-1636017220">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -49,8 +41,6 @@ export default function Navbar() {
                     </svg>
                 </div>
             </nav>
-            {/* <div className="undernav">
-            </div> */}
         </>
     )
 }

@@ -4,8 +4,6 @@ import { useParams } from 'react-router';
 import  { Redirect } from 'react-router-dom'
 import HeaderCategory from '../components/HeaderCategory';
 import ListServices from '../components/ListServices';
-import { NavigationContext } from '../context/NavigationContext'
-import Menu from '../components/Menu';
 import { FirstLoadingContext } from '../context/FirstLoading';
 import ActionCategoryPage from '../components/ActionCategoryPage';
 
@@ -14,7 +12,6 @@ export default function Categories() {
     const { category } = useParams();
     const [loadInfo, setLoadInfo] = useState(true);
     const [categories, setCategories] = useState(null);
-    const { menu } = useContext(NavigationContext)
     const { setFirstLoading } = useContext(FirstLoadingContext)
 
 
@@ -36,15 +33,9 @@ export default function Categories() {
     }
     return (
         <>
-        {menu ? 
-            <Menu/>
-        : 
-            <>
-                < HeaderCategory />
-                < ListServices />
-                < ActionCategoryPage/>
-            </>
-        }
+            < HeaderCategory />
+            < ListServices />
+            < ActionCategoryPage/>
         </>
     )
 }

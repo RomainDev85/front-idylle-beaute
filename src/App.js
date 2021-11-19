@@ -5,26 +5,33 @@ import Categories from './pages/Categories'
 import Home from './pages/Home'
 import { NavigationContext } from './context/NavigationContext'
 import { FirstLoadingContext } from './context/FirstLoading'
-import { ScrollPositionContext } from './context/ScrollPositionContext'
+import { ScrollSectionContext } from './context/ScrollSectionContext'
+import Menu from './components/Menu'
 
 export default function App() {
   const [menu, setMenu] = useState(false);
   const [firstLoading, setFirstLoading] = useState(true);
-  const [ scrollPosition, setScrollPosition ] = useState(0);
+  const [ scrollSection, setScrollSection ] = useState(null);
 
   return (
     <BrowserRouter>
       <FirstLoadingContext.Provider value={{ firstLoading, setFirstLoading }}>
-        <ScrollPositionContext.Provider value={{ scrollPosition, setScrollPosition }}>
+        <ScrollSectionContext.Provider value={{ scrollSection, setScrollSection }}>
           <NavigationContext.Provider value={{ menu, setMenu }}>
             <Navbar/>
+            {
+              menu ? 
+              <Menu />
+              :
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/:category" component={Categories} />
                 <Redirect to="/"/>
               </Switch>
+            }
+              
           </NavigationContext.Provider>
-        </ScrollPositionContext.Provider>
+        </ScrollSectionContext.Provider>
       </FirstLoadingContext.Provider>
     </BrowserRouter>
   )
