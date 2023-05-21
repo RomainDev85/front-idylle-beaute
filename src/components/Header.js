@@ -11,7 +11,7 @@ export default function Header() {
             <img className="logo" src="./img/logo-idyllebeaute-fonce.svg" alt="logo idylle beaute"/>
             <div className="header-btn">
                 <HashLink smooth to="/#prestations">Prestations</HashLink>
-                <HashLink smooth to="/#contact">Contactez-moi</HashLink>
+                <a href="https://www.planity.com/idylle-beaute-85220-laiguillon-sur-vie">Prendre rendez vous</a>
             </div>
         </section>
     )
